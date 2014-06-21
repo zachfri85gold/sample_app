@@ -1,6 +1,13 @@
+GIT
+  remote: git://github.com/chrismdp/spork.git
+  revision: 63761d5cb9e00817e9f1508d00784f22382aac32
+  specs:
+    spork (0.9.0.rc2)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    ZenTest (4.4.2)
     actionmailer (4.0.2)
       actionpack (= 4.0.2)
       mail (~> 2.5.4)
@@ -26,6 +33,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    autotest-rails (4.1.0)
+      ZenTest
+      hoe (>= 2.0.0)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -38,6 +48,8 @@ GEM
     erubis (2.7.0)
     execjs (2.2.0)
     hike (1.2.3)
+    hoe (3.12.0)
+      rake (>= 0.8, < 11.0)
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -124,6 +136,8 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  ZenTest
+  autotest-rails
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
@@ -131,6 +145,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.0)
   sdoc
+  spork!
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)

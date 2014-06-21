@@ -47,3 +47,9 @@ end
 group :development, :test do
   gem 'rspec-rails'
 end
+
+gem "spork", :git => "git://github.com/chrismdp/spork.git"
+
+gem "ZenTest" 
+
+gem 'autotest-rails'
