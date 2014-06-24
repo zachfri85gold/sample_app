@@ -23,6 +23,10 @@ RSpec.describe PagesController, :type => :controller do
   get 'contact' 
   response.should have_selector("title", :content => "Ruby on Rails Tutorial Sample App | Contact
   
+  it "should have a non blank body" do
+  get 'home'
+  response.body.should_not =- /<body>\s*<\/body>/ 
+  
   
   describe "GET 'contact'" do
     it "returns http success" do
